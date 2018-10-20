@@ -1,1 +1,45 @@
 = zeit-micro-graphql-ts
+
+A GraphQL example based on:
+
+* https://zeit.co/now[Zeit Now]
+* https://github.com/zeit/micro[Zeit Micro]
+* https://www.apollographql.com/docs/apollo-server/[Apollo GraphQL]
+* https://www.typescriptlang.org/[TypeScript]
+
+== Local Development
+
+```
+npm install
+npm run build
+node ./node_modules/.bin/micro
+```
+
+== Zeit Now Deployment
+
+`now`
+
+See https://zeit.co/now#get-started[Zeit Now Getting Started] for more details.
+
+== Browser Playground
+
+Pointing your browser to `http://localhost:3000` (local development) or `https://zeit-micro-graphql-ts-XXX.now.sh` (after Zeit Now deployment) will give you a playground.
+Enter `{ hello }` in the left pane and press the play button – tada!
+
+== CURL
+
+Alternatively, the GraphQL endpoint can be accessed via CURL:
+
+```
+curl \
+  -X POST \
+  -H "Content-Type: application/json" \
+  --data '{ "query": "{ hello }" }' \
+  https://zeit-micro-graphql-ts-XXX.now.sh/graphql
+```
+
+== Credits
+
+Based on https://github.com/zeit/now-examples/tree/master/node-typescript[now-examples/node-typescript]
+
+&copy; Rahel Lüthy 2018 – Apache License 2.0
