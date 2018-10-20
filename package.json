@@ -1,8 +1,12 @@
 {
   "name": "zeit-micro-graphql-ts",
   "version": "0.0.1",
-  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netzwerg/zeit-micro-graphql-ts.git"
+  },
   "license": "Apache-2.0",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "start": "micro"
