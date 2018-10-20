@@ -1,1 +1,0 @@
-# zeit-micro-graphql-ts
