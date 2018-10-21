@@ -12,7 +12,7 @@ A GraphQL example based on:
 ```
 npm install
 npm run build
-node ./node_modules/.bin/micro
+npm run start
 ```
 
 == Zeit Now Deployment
